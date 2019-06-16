@@ -1,0 +1,13 @@
+{
+  "name": "parcel-paths",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel client/index.html",
+    "server": "parcel server/index.js"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}
