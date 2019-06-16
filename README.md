@@ -12,7 +12,7 @@ import App from "~/client/App";
 
 should resolve to `.../parcel-paths/client/App` no matter where it's called from
 
-But it behaves differently depending on where it's executed, i.e.:
+But it behaves differently depending on where the entry file is located, i.e.:
 
 - in `/server` it resolves to `.../parcel-paths/server/~/client/App`
 - in `/client` it resolves to `.../parcel-paths/client/~/client/App`
