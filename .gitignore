@@ -1,4 +1,6 @@
 dist
+.parcel-cache
+.cache
 
 # Logs
 logs

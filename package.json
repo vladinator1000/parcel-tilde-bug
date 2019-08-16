@@ -1,16 +1,28 @@
 {
   "name": "parcel-paths",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/server/index.js",
+  "client": "dist/client/index.js",
   "license": "MIT",
+  "browserslist": ["> 1%", "not dead"],
+  "engines": {
+    "node": ">=4.x"
+  },
+  "source": ["server/index.js", "client/index.html"],
+  "targets": {
+    "main": {
+      "node": ["^8.0.0"]
+    },
+    "client": {
+      "browsers": ["> 1%", "not dead"]
+    }
+  },
   "scripts": {
     "start": "parcel client/index.html",
-    "server": "parcel server/index.js",
-    "build-client": "parcel build client/index.html -d dist/client",
-    "build-server": "parcel build server/index.js --target node -d dist/server",
-    "build-run": "yarn build-server && yarn build-client && node dist/server/index.js"
+    "build": "parcel build server/index.js",
+    "build-run": "yarn build && node dist/server/index.js"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.3"
+    "parcel": "^2.0.0-alpha.1.1"
   }
 }
